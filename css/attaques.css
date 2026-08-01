@@ -1,0 +1,344 @@
+body{
+background-color:  #081B33;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+padding: 12px 40px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+     box-shadow:0 3px 15px rgba(0,0,0,.45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+/* Partie logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 125px;
+    height: 125px;
+}
+
+.logo span {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size:10px ;
+    margin: 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+.entête{
+color: white;
+ font-family: Arial, Helvetica, sans-serif;   
+}
+.slogan{
+    font-size: 18px;
+    font-weight: 600;
+    color:#1e88ff;
+}
+/*======================
+RESET
+======================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#081B33;
+
+    color:white;
+
+}
+
+.intro-attaques{
+
+    text-align:center;
+    padding:60px 20px;
+
+}
+
+
+.intro-attaques h1{
+
+    font-size:42px;
+    color:#1e88ff;
+    margin-bottom:20px;
+
+}
+
+
+.intro-attaques p{
+
+    max-width:850px;
+    margin:auto;
+    color:#ccc;
+    font-size:18px;
+    line-height:1.6;
+
+}
+
+
+
+
+
+.attaques-container{
+
+    width:90%;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    padding-bottom:70px;
+
+}
+
+
+
+
+
+.attaque-card{
+
+    background:#101d33;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 15px rgba(0,217,255,0.15);
+
+    transition:0.3s;
+
+}
+
+
+
+.attaque-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 25px #00d9ff;
+
+}
+
+
+
+
+.attaque-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+
+
+.card-content{
+
+    padding:25px;
+
+}
+
+
+
+
+.card-content h2{
+
+    color:#1e88ff;
+
+    text-align:center;
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+.card-content h3{
+
+    color:#1e88ff;
+
+    margin-top:20px;
+
+    margin-bottom:8px;
+
+}
+
+
+
+
+.card-content p{
+
+    color:#ccc;
+
+    line-height:1.6;
+
+}
+
+
+
+
+@media(max-width:1000px){
+
+.attaques-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:650px){
+
+.attaques-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+footer{
+
+    background-color:#0d1117;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:70px;
+margin: 16px;
+    padding:20px 50px;
+    flex-wrap:wrap;
+
+}
+
+
+/* Colonnes */
+
+.footer-colonne{
+
+    flex:1;
+
+    min-width:250px;
+
+}
+
+
+/* Titres */
+
+.footer-colonne h3{
+
+    color:#1e88ff;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+
+/* Paragraphes */
+
+.footer-colonne p{
+
+    color:white;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+/* Liens */
+
+.footer-colonne a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+
+/* Survol */
+
+.footer-colonne a:hover{
+
+    color:#1e88ff;
+
+    padding-left:8px;
+
+}
+
+
+/* Copyright */
+
+.copyright{
+
+    background:#090c10;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    font-size:16px;
+
+    border-top:1px solid #222;
+
+}

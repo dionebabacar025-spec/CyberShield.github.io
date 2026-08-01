@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact - Cybershield</title>
+</head>
+<body>
+      <header> 
+    <div class="logo"><img src="images/logo_CyberShield.png" alt="Logo CyberShield" width="300" height="300"> 
+    </div>
+
+<div class="titre">
+    <h1 class="entête"> <strong class="strong">CyberShield</strong> <br>
+   <span  class="slogan">Informer aujourd'hui, Protéger demain </span> 
+  </div>     
+<nav> 
+        <ul  class="menu">   
+     <li><a href="index.html" target="_blank"> Accueil </a></li>
+        <li><a href="attaques.html" target="_blank">attaques</a></li>
+        <li><a href="conseils.html" target="_blank">Conseils</a></li>
+        <li><a href="actualités.html" target="_blank">actualités</a></li>
+        <li><a href="apropos.html" target="_blank">A Propos</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>  
+    </nav>     
+</header>
+<hr>  
+
+  <main>
+    <section class="contact-container">
+      <div class="contact-panel">
+        <div class="contact-info">
+          <h2>Contactez Cybershield</h2>
+          <p>Pour toute demande d'information, un signalement ou un partenariat, remplissez ce formulaire professionnel. Nous vous répondrons sous 24 heures.</p>
+          <ul>
+            <li><strong>Email :</strong> dionebabacar025@gmail.com</li>
+            <li><strong>Téléphone :</strong> 77 544 86 44</li>
+            <li><strong>Adresse :</strong> Dakar, Sénégal</li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input id="name" name="name" type="text" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email professionnel</label>
+              <input id="email" name="email" type="email" placeholder="votre@exemple.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input id="subject" name="subject" type="text" placeholder="Sujet du message" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Votre message" required></textarea>
+          </div>
+
+          <div class="form-group form-consent">
+            <label><input type="checkbox" id="consent" required> J'accepte que mes données soient utilisées pour répondre à ma demande.</label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="button btn-primary">Envoyer le message</button>
+            <div id="formSuccess" class="form-success" aria-live="polite" hidden>Merci — votre message a été envoyé.</div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function(){
+      const form = document.getElementById('contactForm');
+      const success = document.getElementById('formSuccess');
+
+      function isEmail(value){
+        return /\S+@\S+\.\S+/.test(value);
+      }
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const subject = form.subject.value.trim();
+        const message = form.message.value.trim();
+        const consent = form.consent.checked;
+
+        let errors = [];
+        if(name.length < 2) errors.push('Nom invalide');
+        if(!isEmail(email)) errors.push('Email invalide');
+        if(subject.length < 2) errors.push('Sujet invalide');
+        if(message.length < 6) errors.push('Message trop court');
+        if(!consent) errors.push('Consentement requis');
+
+        if(errors.length){
+          alert('Veuillez corriger :\n' + errors.join('\n'));
+          return;
+        }
+
+        success.hidden = false;
+        form.reset();
+        setTimeout(()=> success.hidden = true, 6000);
+      });
+    })();
+  </script>
+  <hr>
+ <footer>
+<div class="footer-colonne">
+        <h3>CyberShield</h3>
+
+        <p>
+            Sensibiliser à la cybersécurité grâce à des conseils,
+            des actualités et des ressources accessibles à tous.
+        </p>
+    </div>
+
+    <div class="footer-colonne">
+        <h3>Navigation</h3>
+
+        <a href="index.html">Accueil</a>
+         <a href="apropos.html" >À propos</a>
+        <a href="attaques.html">Attaques</a>
+        <a href="conseils.html">Conseils</a>
+        <a href="actualités.html">Actualités</a>
+         <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-colonne">
+        <h3>Contact</h3>
+
+        <p>📍 Dakar, Sénégal</p>
+        <p>✉️ dionebabacar025@gmail.com</p>
+        <p>✉️ aboufall66@gmail.com</p>
+           <p>✉️ astouwallo25diop@gmail.com</p>
+        <p>🌐 CyberShield</p>
+    </footer>
+
+<div class="copyright">
+    © 2026 CyberShield - Tous droits réservés.
+</div>
+</footer>
+    </div>
+</body>
+
+</html>
+<style>
+    /* ==========================
+   PAGE CONTACT
+========================== */
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#081B33;
+    color:#fff;
+}
+
+.contact-container{
+    width:100%;
+    padding:70px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact-panel{
+    width:100%;
+    max-width:1200px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+
+    background:#0d223f;
+    border:1px solid rgba(0,191,255,.25);
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+/* ==========================
+   Partie gauche
+========================== */
+
+.contact-info h2{
+    color:#1e88ff;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    color:#d5dce8;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.contact-info ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.contact-info li{
+    margin-bottom:18px;
+    color:#fff;
+    line-height:1.7;
+}
+
+.contact-info strong{
+    color:#1e88ff;
+}
+
+/* ==========================
+   Formulaire
+========================== */
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.form-row{
+    display:flex;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+.form-group input,
+.form-group textarea{
+    padding:15px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.15);
+
+    background:#142d4e;
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.form-group textarea{
+    resize:vertical;
+    min-height:170px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    color:#9bb0c8;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    outline:none;
+    border-color:#00bfff;
+    box-shadow:0 0 12px rgba(0,191,255,.4);
+}
+
+/* ==========================
+   Checkbox
+========================== */
+
+.form-consent{
+    flex-direction:row;
+    align-items:center;
+}
+
+.form-consent label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.form-consent input{
+    width:18px;
+    height:18px;
+}
+
+/* ==========================
+   Bouton
+========================== */
+
+.form-actions{
+    margin-top:10px;
+}
+
+.btn-primary{
+    width:100%;
+    padding:16px;
+
+    background:#1e88ff;
+    color:#081B33;
+
+    border:none;
+    border-radius:12px;
+
+    font-size:17px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#1fd4ff;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,191,255,.35);
+}
+
+/* ==========================
+   Message succès
+========================== */
+
+.form-success{
+    margin-top:18px;
+    background:#0b8a3f;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:900px){
+
+.contact-panel{
+    grid-template-columns:1fr;
+    padding:30px;
+}
+
+.form-row{
+    flex-direction:column;
+}
+
+.contact-info h2{
+    text-align:center;
+}
+
+.contact-info p{
+    text-align:center;
+}
+
+}
+ header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+padding: 12px 40px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+     box-shadow:0 3px 15px rgba(0,0,0,.45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+/* Partie logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 125px;
+    height: 125px;
+}
+
+.logo span {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size:10px ;
+    margin: 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+.entête{
+color: white;
+ font-family: Arial, Helvetica, sans-serif;   
+}
+.slogan{
+    font-size: 18px;
+    font-weight: 600;
+    color:#1e88ff;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    background-color:#081B33;
+}
+footer{
+
+    background-color:#0d1117;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:70px;
+margin: 16px;
+    padding:20px 50px;
+    flex-wrap:wrap;
+
+}
+
+
+/* Colonnes */
+
+.footer-colonne{
+
+    flex:1;
+
+    min-width:250px;
+
+}
+
+
+/* Titres */
+
+.footer-colonne h3{
+
+    color:#1e88ff;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+
+/* Paragraphes */
+
+.footer-colonne p{
+
+    color:white;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+/* Liens */
+
+.footer-colonne a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+/* Survol */
+
+.footer-colonne a:hover{
+
+    color:#1e88ff;
+
+    padding-left:8px;
+
+}
+
+
+/* Copyright */
+
+.copyright{
+
+    background:#090c10;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    font-size:16px;
+
+    border-top:1px solid #222;
+
+}
+</style>

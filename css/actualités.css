@@ -1,0 +1,423 @@
+body{
+background-color:  #081B33;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+padding: 12px 40px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+     box-shadow:0 3px 15px rgba(0,0,0,.45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+/* Partie logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 125px;
+    height: 125px;
+}
+
+.logo span {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size:10px ;
+    margin: 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+footer{
+
+    background-color:#0d1117;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:70px;
+margin: 16px;
+    padding:20px 50px;
+    flex-wrap:wrap;
+
+}
+
+
+/* Colonnes */
+
+.footer-colonne{
+
+    flex:1;
+
+    min-width:250px;
+
+}
+
+
+/* Titres */
+
+.footer-colonne h3{
+
+    color:#1e88ff;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+
+/* Paragraphes */
+
+.footer-colonne p{
+
+    color:white;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+/* Liens */
+
+.footer-colonne a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+
+/* Survol */
+
+.footer-colonne a:hover{
+
+    color:#1e88ff;
+
+    padding-left:8px;
+
+}
+
+
+/* Copyright */
+
+.copyright{
+
+    background:#090c10;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    font-size:16px;
+
+    border-top:1px solid #222;
+
+}
+.entête{
+color: white;
+ font-family: Arial, Helvetica, sans-serif;   
+}
+.slogan{
+    font-size: 18px;
+    font-weight: 600;
+    color:#1e88ff;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F5FAFF;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#1e88ff ;
+}
+p{
+    color: white;
+}
+.barre-recherche{
+    display:flex;
+    align-items:center;
+
+    width:600px;
+    max-width:100%;
+margin-left: auto;
+margin-right: 30px;
+    border:2px solid #2563EB;
+    border-radius:50px;
+
+    overflow:hidden;
+
+    background:#111827;
+}
+
+.barre-recherche input{
+display: flex;
+    flex:1;
+
+    padding:15px 20px;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:white;
+
+    font-size:16px;
+}
+
+.barre-recherche input::placeholder{
+display: flex;
+    color:#9CA3AF;
+}
+
+.barre-recherche button{
+
+    width:60px;
+
+    height:55px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:20px;
+
+    transition:.3s;
+}
+
+.barre-recherche button:hover{
+
+    background:#3B82F6;
+}
+.actualites{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:60px auto;
+
+}
+
+.actualites h1{
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.intro{
+
+    color:#C5D1E8;
+
+    font-size:18px;
+
+    margin-bottom:40px;
+
+    line-height:1.6;
+
+}
+
+/* Conteneur */
+
+.conteneur-actualites{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:35px;
+
+}
+
+/* Carte */
+
+.carte-actu{
+
+    background:#111827;
+
+    border:1px solid #2563EB;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 0 15px rgba(37,99,235,.15);
+
+}
+
+/* Animation */
+
+.carte-actu:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(37,99,235,.45);
+
+}
+
+/* Image */
+
+.carte-actu img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+/* Contenu */
+
+.contenu{
+
+    padding:25px;
+
+}
+
+/* Date */
+
+.date{
+
+    color:#9CA3AF;
+
+    font-size:14px;
+
+}
+
+/* Catégorie */
+
+.categorie{
+
+    display:inline-block;
+
+    margin-top:12px;
+
+    margin-bottom:18px;
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+}
+
+/* Titre */
+
+.contenu h2{
+
+    color:#4DA6FF;
+
+    margin-bottom:15px;
+
+    font-size:27px;
+
+}
+
+/* Description */
+
+.contenu p{
+
+    color:white;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+/* Bouton */
+
+.contenu a{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+    font-weight:bold;
+
+}
+
+.contenu a:hover{
+
+    background:#3B82F6;
+
+    box-shadow:0 0 20px #2563EB;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+footer{
+    padding-right: 20px;
+}

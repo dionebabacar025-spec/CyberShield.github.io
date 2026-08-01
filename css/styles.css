@@ -1,0 +1,412 @@
+p{
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+ max-width: 520px;
+    font-size: 22px;
+    line-height: 1.8;
+    color:#d7d7d7;
+    margin-bottom:40px;
+    padding: 0 20px;
+}
+h1{
+ font-family: Arial, Helvetica, sans-serif;   
+ 
+}
+.slogan{
+    font-size: 18px;
+    font-weight: 600;
+    color:#1e88ff;
+    
+}
+a{
+ font-size: 1.5em;   
+}
+body{
+    background:
+           
+
+    url("../images/my_fond.png");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    max-width:100%;
+    height:auto;
+     margin-bottom:40px;
+    padding: 0 20px
+    }
+header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+padding: 12px 40px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+     box-shadow:0 3px 15px rgba(0,0,0,.45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+
+/* Partie logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 125px;
+    height: 125px;
+}
+
+.logo span {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size:10px ;
+    margin: 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+h2{
+    font-size: 3em;
+    color: white;
+}
+.h2{
+    color: #1e88ff;
+}
+.mission{
+    color:#1e88ff;
+}
+a:hover{
+    text-decoration: #00bfff;
+    color: red;
+}
+.bouton{
+    display: inline-block;
+    background: #1E88FF;
+    background-color: #1E88FF;
+    padding: 15px 35px;
+    border-radius:12px;
+    text-decoration: none;
+    color:white;
+    transition: 0.3s;
+    border:2px solid #1E88FF;
+    font-size: 18px;
+    font-weight: 600;
+}
+.bouton:hover{
+    color: black;
+    text-decoration: underline;
+}
+footer{
+    border: 100px;
+    background-color: black;
+    color: white;
+    border-color: #d7d7d7;
+    border-bottom: red;
+    box-shadow: 100px 100px 100px blue;
+}
+/*======================================
+        SECTION DES RUBRIQUES
+======================================*/
+
+.rubriques{
+
+    display:grid;
+
+    grid-template-columns:repeat(4, 1fr);
+
+    gap:25px;
+
+    width:95%;
+
+    margin:80px auto;
+    padding: 0 20px
+
+}
+
+
+
+/*======================================
+              CARTE
+======================================*/
+
+.carte{
+
+    background:#101a2d;
+
+    border:1px solid rgba(0,191,255,.25);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    min-height:230px;
+
+    transition:.3s;
+
+    box-shadow:0 0 12px rgba(0,191,255,.15);
+
+}
+
+
+/*======================================
+              SURVOL
+======================================*/
+
+.carte:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00BFFF;
+
+    box-shadow:0 0 20px rgba(0,191,255,.45);
+
+}
+
+
+
+/*======================================
+        LIGNE ICONE + TITRE
+======================================*/
+
+.entete-carte{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/*======================================
+              ICONE
+======================================*/
+
+.icone{
+
+    width:70px;
+
+    height:70px;
+
+    border:2px solid rgba(0,191,255,.3);
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    color:#00BFFF;
+
+    flex-shrink:0;
+
+}
+
+
+
+/*======================================
+              TITRE
+======================================*/
+
+.entete-carte h3{
+
+    color:white;
+
+    font-size:22px;
+
+    margin:0;
+
+}
+
+
+
+/*======================================
+            CONTENU
+======================================*/
+
+.contenu p{
+
+    color:#d8e7ff;
+
+    font-size:16px;
+
+    line-height:1.6;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/*======================================
+              LIEN
+======================================*/
+
+.contenu a{
+
+    color:#00BFFF;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+.contenu a:hover{
+
+    color:white;
+
+}
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+
+    background-color:#0d1117;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:70px;
+margin: 16px;
+    padding:20px 50px;
+    flex-wrap:wrap;
+
+}
+
+
+/* Colonnes */
+
+.footer-colonne{
+
+    flex:1;
+
+    min-width:250px;
+
+}
+
+
+/* Titres */
+
+.footer-colonne h3{
+
+    color:#1e88ff;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+
+/* Paragraphes */
+
+.footer-colonne p{
+
+    color:white;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+/* Liens */
+
+.footer-colonne a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+
+/* Survol */
+
+.footer-colonne a:hover{
+
+    color:#1e88ff;
+
+    padding-left:8px;
+
+}
+
+
+/* Copyright */
+
+.copyright{
+
+    background:#090c10;
+
+    color:white;
+
+
+
+align-items: center;
+
+    padding:20px;
+
+    font-size:16px;
+
+    border-top:1px solid #222;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+main{
+    padding-left: 40px;
+}
+footer{
+    padding-right: 20px;
+}
