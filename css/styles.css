@@ -27,6 +27,12 @@ body{
         background-attachment: scroll;
     }
 }
+@media (max-width: 768px) {
+    body {
+        background-position: 85% center;
+        background-attachment: scroll;
+    }
+}
 
 
 /*==================================================
