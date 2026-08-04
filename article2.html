@@ -6,27 +6,65 @@
     <title>CyberShield</title>
 </head>
 <body>
-    <header> 
-    <div class="logo"><img src="images/logo_CyberShield.png" alt="Logo CyberShield" width="300" height="300"> 
+ <header class="header">
+
+    <div class="bloc-identite">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo_CyberShield.png" alt="Logo CyberShield" a href="index.html">
+            </a>
+        </div>
+
+        <div class="titre">
+            <h1>
+                CyberShield
+                <br>
+                <span class="slogan">
+                    Informer aujourd'hui, Protéger demain
+                </span>
+            </h1>
+        </div>
+
     </div>
 
-<div class="titre">
-    <h1 class="entête"> <strong class="strong">CyberShield</strong> <br>
-   <span  class="slogan">Informer aujourd'hui, Protéger demain </span> 
-  </div>     
-<nav> 
-        <ul  class="menu">   
-     <li><a href="index.html" target="_blank"> Accueil </a></li>
-        <li><a href="attaques.html" target="_blank">attaques</a></li>
-        <li><a href="conseils.html" target="_blank">Conseils</a></li>
-        <li><a href="actualités.html" target="_blank">actualités</a></li>
-        <li><a href="apropos.html" target="_blank">A Propos</a></li>
-        <li><a href="contact.html" target="_blank">Contact</a></li>
-        </ul>  
-    </nav>     
+
+    <!-- Bouton menu mobile -->
+    <input type="checkbox" id="menu">
+
+    <label for="menu" class="menu-btn">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </label>
+
+
+    <nav class="navigation">
+
+        <ul>
+
+            <li><a href="index.html">Accueil</a></li>
+
+            <li><a href="attaques.html">Attaques</a></li>
+
+            <li><a href="conseils.html">Conseils</a></li>
+
+            <li><a href="actualités.html">Actualités</a></li>
+
+            <li><a href="apropos.html">À propos</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
 </header>
 <hr>
-<main>
+<main> 
+    <br>
+    <br>
     <h1 class="h2"> <center>Windows : Microsoft corrige une faille de sécurité critique exploitée par des cybercriminels</center></h1>
 <p class="infos-article"> par<strong class="auteur"> Babacar Dione</strong> de <strong>CyberShield</strong> • 19 juillet 2026 • 4 min de lecture</p>
     <img class="image-actu" src="images/windows_alert.png" alt="windows_alert" height="500" width="1000">
@@ -140,65 +178,336 @@ Pour vérifier que votre ordinateur est correctement protégé, il suffit de :
 </footer>
 </html>
 <style>
-    header {
-    width: 100%;
-    height: 80px;
-    background-color: black;
-padding: 12px 40px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(10px);
-     box-shadow:0 3px 15px rgba(0,0,0,.45);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 60px;
-}
-/* Partie logo */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.logo img {
-    width: 125px;
-    height: 125px;
+html{
+    scroll-behavior:smooth;
+}
+body{
+background-color:  #081B33;
+}
+.header{
+
+    width:100%;
+
+    height:90px;
+
+    background:black;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 50px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+
 }
 
-.logo span {
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
+
+/* Bloc logo + titre */
+
+.bloc-identite{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
 }
 
 
-/* Menu */
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    font-size:10px ;
-    margin: 100px;
+/* Logo */
+
+.logo img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    transition: 0.3s;
+
+/* Titre */
+
+.titre h1{
+
+    color:white;
+
+    font-size:32px;
+
+    margin:0;
+
+    line-height:1.2;
+
 }
 
-nav ul li a:hover {
-    color: #00bfff;
-}
-.entête{
-color: white;
- font-family: Arial, Helvetica, sans-serif;   
-}
+
 .slogan{
-    font-size: 18px;
-    font-weight: 600;
+
     color:#1e88ff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+
+/* Navigation */
+
+.navigation ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+.navigation a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+.navigation a:hover{
+
+    color:#00bfff;
+
+}
+
+
+/* Cacher checkbox */
+
+#menu{
+
+    display:none;
+
+}
+
+
+/* Menu hamburger */
+
+.menu-btn{
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    cursor:pointer;
+
+}
+
+
+.menu-btn span{
+
+    width:30px;
+
+    height:3px;
+
+    background:white;
+
+}
+
+
+/*=================================
+          TABLETTE
+=================================*/
+
+@media(max-width:1000px){
+
+
+.header{
+
+    height:auto;
+
+    padding:15px 30px;
+
+}
+
+
+.bloc-identite{
+
+    gap:10px;
+
+}
+
+
+.logo img{
+
+    width:75px;
+
+    height:75px;
+
+}
+
+
+.titre h1{
+
+    font-size:26px;
+
+}
+
+
+.slogan{
+
+    font-size:14px;
+
+}
+
+
+.navigation ul{
+
+    gap:15px;
+
+}
+
+
+.navigation a{
+
+    font-size:15px;
+
+}
+
+
+}
+
+
+
+/*=================================
+          MOBILE
+=================================*/
+
+@media(max-width:768px){
+
+
+.header{
+
+    position:relative;
+
+    padding:12px 20px;
+
+}
+
+
+.logo img{
+
+    width:65px;
+
+    height:65px;
+
+}
+
+
+.titre h1{
+
+    font-size:22px;
+
+}
+
+
+.slogan{
+
+    font-size:12px;
+
+}
+
+
+/* afficher hamburger */
+
+.menu-btn{
+
+    display:flex;
+
+}
+
+
+/* cacher menu */
+
+.navigation{
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:#000;
+
+    display:none;
+
+}
+
+
+.navigation ul{
+
+    flex-direction:column;
+
+    padding:20px 0;
+
+    gap:0;
+
+}
+
+
+.navigation li{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+
+.navigation a{
+
+    display:block;
+
+    padding:15px;
+
+}
+
+
+/* ouverture menu */
+
+#menu:checked ~ .navigation{
+
+    display:block;
+
+}
+
+
 }
 body{
     background-color: #081B33;
@@ -469,5 +778,8 @@ footer{
         width:90%;
         font-size:18px;
     }
+}
+.navigation a{
+    white-space: nowrap;
 }
 </style>
