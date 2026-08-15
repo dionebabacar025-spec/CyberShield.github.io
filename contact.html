@@ -6,8 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Contact - Cybershield</title>
 </head>
-<body>
-      <header class="header">
+ <header class="header">
 
     <div class="bloc-identite">
 
@@ -62,8 +61,11 @@
 
     </nav>
 
+
 </header>
-<hr>  
+<hr>
+<body>
+    
 
   <main>
     <section class="contact-container">
@@ -192,6 +194,131 @@
     /* ==========================
    PAGE CONTACT
 ========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+body{
+background-color:  #081B33;
+}
+.header{
+
+    width:100%;
+
+    height:90px;
+
+    background:black;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 50px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+
+}
+
+
+/* Bloc logo + titre */
+
+.bloc-identite{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+
+/* Logo */
+
+.logo img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+}
+
+
+/* Titre */
+
+.titre h1{
+
+    color:white;
+
+    font-size:32px;
+
+    margin:0;
+
+    line-height:1.2;
+
+}
+
+
+.slogan{
+
+    color:#1e88ff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+
+/* Navigation */
+
+.navigation ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+.navigation a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+.navigation a:hover{
+
+    color:#00bfff;
+
+}
+
 
 body{
     margin:0;
