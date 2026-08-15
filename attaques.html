@@ -78,66 +78,171 @@
         les plus fréquentes et les moyens de s'en protéger.
     </p>
 
+<section class="attaques-section">
+
+ 
+
+    <div class="attaques-container">
+
+        <!-- PHISHING -->
+        <article class="carte-attaque">
+
+            <img src="images/phishing_image.png" alt="Phishing">
+
+            <div class="contenu-carte">
+                <h2>Phishing</h2>
+
+                <p>
+                    Une technique utilisée pour tromper une victime
+                    afin de lui faire communiquer des informations sensibles.
+                </p>
+
+                <button class="btn-popup"
+                        data-attaque="phishing">
+                    En savoir plus
+                </button>
+            </div>
+
+        </article>
+
+
+        <!-- RANSOMWARE -->
+        <article class="carte-attaque">
+
+            <img src="images/ransomware_image.png" alt="Ransomware">
+
+            <div class="contenu-carte">
+                <h2>Ransomware</h2>
+
+                <p>
+                    Un logiciel malveillant qui bloque ou chiffre les données
+                    d'une victime afin d'exiger une rançon.
+                </p>
+
+                <button class="btn-popup"
+                        data-attaque="ransomware">
+                    En savoir plus
+                </button>
+            </div>
+
+        </article>
+
+
+        <!-- MALWARE -->
+        <article class="carte-attaque">
+
+            <img src="images/malware_image.png" alt="Malware">
+
+            <div class="contenu-carte">
+                <h2>Malware</h2>
+
+                <p>
+                    Un programme conçu pour infiltrer un système,
+                    voler des informations ou perturber son fonctionnement.
+                </p>
+
+                <button class="btn-popup"
+                        data-attaque="malware">
+                    En savoir plus
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- DDOS -->
+        <article class="carte-attaque">
+
+            <img src="images/ddos_image.png" alt="Attaque DDoS">
+
+            <div class="contenu-carte">
+                <h2>Attaque DDoS</h2>
+
+                <p>
+                    Une attaque visant à rendre un service inaccessible
+                    en le surchargeant de requêtes.
+                </p>
+
+                <button class="btn-popup"
+                        data-attaque="ddos">
+                    En savoir plus
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- INGENIERIE SOCIALE -->
+        <article class="carte-attaque">
+
+            <img src="images/ingenierie_social_image.png"
+                 alt="Ingénierie sociale">
+
+            <div class="contenu-carte">
+
+                <h2>Ingénierie sociale</h2>
+
+                <p>
+                    Une méthode qui exploite la confiance et le comportement
+                    humain pour obtenir des informations ou provoquer une action.
+                </p>
+
+                <button class="btn-popup"
+                        data-attaque="ingenierie-sociale">
+                    En savoir plus
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- DEEPFAKE -->
+        <article class="carte-attaque">
+
+            <img src="images/deepfake_image.png"
+                 alt="Deepfake">
+
+            <div class="contenu-carte">
+
+                <h2>Deepfake</h2>
+
+                <p>
+                    Des contenus audio ou vidéo manipulés grâce à l'intelligence
+                    artificielle pour imiter une personne réelle.
+                </p>
+
+                <button class="btn-popup"
+                        data-attaque="deepfake">
+                    En savoir plus
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
 </section>
 
 
+<!-- ========================= -->
+<!-- POPUP -->
+<!-- ========================= -->
 
+<div class="popup" id="popup">
 
-<section class="attaques-container">
+    <div class="popup-contenu">
 
+        <button class="popup-fermer" id="fermerPopup">
+            &times;
+        </button>
 
+        <h2 id="popupTitre"></h2>
 
-<!-- PHISHING -->
-
-<div class="attaque-card">
-
-    <img src="images/phishing_image.png" alt="Phishing">
-
-    <div class="card-content">
-
-        <h2>Phishing (hameçonnage) </h2>
-
-        <h3>Définition</h3>
-
-        <p>
-            Le phishing est une technique de cyberattaque basée sur la tromperie.
-            Le pirate se fait passer pour une personne ou une organisation fiable
-            afin de récupérer des informations sensibles.
-        </p>
-
-
-        <h3>Comment fonctionne l'attaque ?</h3>
-
-        <p>
-            Le cybercriminel envoie généralement un faux email, SMS ou message.
-            La victime est ensuite dirigée vers un faux site internet où elle
-            saisit ses informations personnelles.
-        </p>
-
-
-        <h3>Exemple</h3>
-
-        <p>
-            Un faux message prétendant venir d'une banque demandant une
-            confirmation urgente des identifiants.
-        </p>
-
-
-        <h3>Conséquences</h3>
-
-        <p>
-            Vol de comptes, fraude bancaire, usurpation d'identité et perte
-            de données personnelles.
-        </p>
-
-
-        <h3>Protection</h3>
-
-        <p>
-            Vérifier l'expéditeur, éviter les liens suspects, activer
-            l'authentification à deux facteurs et ne jamais communiquer
-            ses codes confidentiels.
-        </p>
+        <div id="popupTexte"></div>
 
     </div>
 
@@ -146,325 +251,6 @@
 
 
 
-
-<!-- RANSOMWARE -->
-
-
-<div class="attaque-card">
-
-<img src="images/ransomware_image.png" alt="Ransomware">
-
-
-<div class="card-content">
-
-<h2>Ransomware (rançongiciel) </h2>
-
-
-<h3>Définition</h3>
-
-<p>
-Un ransomware est un logiciel malveillant qui bloque l'accès aux fichiers
-d'une victime en les chiffrant. Les pirates demandent ensuite une rançon
-pour les restaurer.
-</p>
-
-
-<h3>Comment fonctionne l'attaque ?</h3>
-
-<p>
-L'attaque commence souvent par une pièce jointe infectée ou une faille
-de sécurité exploitée. Une fois installé, le programme chiffre les données.
-</p>
-
-
-<h3>Exemple</h3>
-
-<p>
-Une entreprise découvre que tous ses fichiers sont verrouillés et reçoit
-un message exigeant un paiement en échange de la clé de déchiffrement.
-</p>
-
-
-<h3>Conséquences</h3>
-
-<p>
-Arrêt des activités, perte de données, coûts financiers importants et
-atteinte à la réputation.
-</p>
-
-
-<h3>Protection</h3>
-
-<p>
-Effectuer des sauvegardes régulières, mettre à jour les logiciels,
-utiliser un antivirus et éviter les fichiers inconnus.
-</p>
-
-
-</div>
-
-</div>
-
-
-
-
-
-<!-- MALWARE -->
-
-
-<div class="attaque-card">
-
-<img src="images/malware_image.png" alt="Malware">
-
-
-<div class="card-content">
-
-
-<h2>Malware</h2>
-
-
-<h3>Définition</h3>
-
-<p>
-Un malware est un programme créé pour nuire à un système informatique.
-Il peut espionner, voler des données ou endommager un appareil.
-</p>
-
-
-<h3>Types de malware</h3>
-
-<p>
-Les principaux types sont les virus, chevaux de Troie, logiciels espions
-(spyware) et vers informatiques.
-</p>
-
-
-<h3>Fonctionnement</h3>
-
-<p>
-Le malware pénètre généralement dans un appareil grâce à un téléchargement
-infecté, une application dangereuse ou une faille de sécurité.
-</p>
-
-
-<h3>Conséquences</h3>
-
-<p>
-Vol d'informations, surveillance de l'utilisateur, ralentissement du système
-ou destruction de fichiers.
-</p>
-
-
-<h3>Protection</h3>
-
-<p>
-Installer les mises à jour, télécharger uniquement depuis des sources fiables
-et utiliser des solutions de sécurité.
-</p>
-
-
-</div>
-
-</div>
-
-
-
-
-
-
-<!-- DDOS -->
-
-
-<div class="attaque-card">
-
-<img src="images/ddos_image.png" alt="Attaque DDoS">
-
-
-<div class="card-content">
-
-
-<h2>Attaque DDoS</h2>
-
-
-<h3>Définition</h3>
-
-<p>
-Une attaque DDoS consiste à envoyer un nombre massif de requêtes vers
-un serveur afin de le rendre inaccessible.
-</p>
-
-
-<h3>Fonctionnement</h3>
-
-<p>
-Les pirates utilisent souvent un réseau d'appareils infectés appelé
-botnet pour envoyer simultanément des milliers de connexions.
-</p>
-
-
-<h3>Objectif</h3>
-
-<p>
-Rendre un site web ou un service indisponible afin de perturber son activité.
-</p>
-
-
-<h3>Conséquences</h3>
-
-<p>
-Interruption du service, pertes financières et mauvaise expérience utilisateur.
-</p>
-
-
-<h3>Protection</h3>
-
-<p>
-Utiliser des systèmes anti-DDoS, surveiller le trafic réseau et renforcer
-l'infrastructure informatique.
-</p>
-
-
-</div>
-
-</div>
-
-
-
-
-
-
-<!-- INGENIERIE SOCIALE -->
-
-
-<div class="attaque-card">
-
-<img src="images/ingenierie_social_image.png" alt="Ingénierie sociale">
-
-
-<div class="card-content">
-
-
-<h2>Ingénierie sociale</h2>
-
-
-<h3>Définition</h3>
-
-<p>
-L'ingénierie sociale consiste à manipuler psychologiquement une personne
-pour obtenir des informations ou provoquer une action dangereuse.
-</p>
-
-
-<h3>Techniques utilisées</h3>
-
-<p>
-Les pirates utilisent la confiance, l'urgence, la peur ou l'autorité
-pour convaincre leurs victimes.
-</p>
-
-
-<h3>Exemple</h3>
-
-<p>
-Un faux technicien informatique demande un mot de passe sous prétexte
-d'effectuer une maintenance.
-</p>
-
-
-<h3>Protection</h3>
-
-<p>
-Toujours vérifier l'identité d'un interlocuteur et ne jamais partager
-d'informations sensibles.
-</p>
-
-
-</div>
-
-</div>
-
-
-
-
-
-
-<!-- DEEPFAKE -->
-
-
-<div class="attaque-card">
-
-<img src="images/deepfake_image.png" alt="Deepfake">
-
-
-<div class="card-content">
-
-
-<h2>Deepfake</h2>
-
-
-<h3>Définition</h3>
-
-<p>
-Le deepfake utilise l'intelligence artificielle pour créer de fausses
-images, vidéos ou voix ressemblant à de vraies personnes.
-</p>
-
-
-<h3>Utilisation criminelle</h3>
-
-<p>
-Les cybercriminels peuvent créer de faux appels vidéo, de fausses voix
-ou diffuser de fausses informations.
-</p>
-
-
-<h3>Dangers</h3>
-
-<p>
-Usurpation d'identité, manipulation de l'opinion publique et escroqueries.
-</p>
-
-
-<h3>Protection</h3>
-
-<p>
-Vérifier les sources, analyser les contenus suspects et ne pas faire
-confiance uniquement aux images ou vidéos.
-</p>
-
-
-</div>
-
-</div>
-
-
-
-</section>
-
-<section class="transition-conseils">
-
-    <div class="transition-box">
-
-        <div class="transition-icon">
-            <i class="fa-solid fa-shield-halved"></i>
-        </div>
-
-        <h2>Passez à l'étape suivante</h2>
-
-        <p>
-            Vous connaissez désormais les principales cyberattaques et leurs
-            conséquences. Découvrez maintenant les meilleures pratiques pour
-            protéger efficacement vos appareils, vos comptes et vos données.
-        </p>
-
-        <a href="conseils.html" class="btn-transition">
-            Découvrir les conseils
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-    </div>
-
-</section>
 </main>
 <hr>
 <footer>
@@ -504,5 +290,6 @@ confiance uniquement aux images ou vidéos.
     © 2026 CyberShield - Tous droits réservés.
 </div>
 </footer>
+<script src="javascript/script.js"></script>
 </body>
 </html>
