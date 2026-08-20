@@ -34,7 +34,6 @@ body{
     }
 }
 
-
 /*==================================================
             VARIABLES
 ==================================================*/
@@ -49,7 +48,6 @@ body{
     --gris:#d7d7d7;
 
 }
-
 
 /*==================================================
                 HEADER
@@ -79,7 +77,6 @@ body{
 
 }
 
-
 /* Bloc logo + titre */
 
 .bloc-identite{
@@ -92,7 +89,6 @@ body{
 
 }
 
-
 /* Logo */
 
 .logo img{
@@ -104,7 +100,6 @@ body{
     object-fit:contain;
 
 }
-
 
 /* Titre */
 
@@ -120,7 +115,6 @@ body{
 
 }
 
-
 .slogan{
 
     color:#1e88ff;
@@ -130,7 +124,6 @@ body{
     font-weight:600;
 
 }
-
 
 /* Navigation */
 
@@ -150,7 +143,6 @@ body{
 
 }
 
-
 .navigation a{
 
     color:white;
@@ -165,13 +157,11 @@ body{
 
 }
 
-
 .navigation a:hover{
 
     color:#00bfff;
 
 }
-
 
 /* Cacher checkbox */
 
@@ -180,7 +170,6 @@ body{
     display:none;
 
 }
-
 
 /* Menu hamburger */
 
@@ -196,7 +185,6 @@ body{
 
 }
 
-
 .menu-btn span{
 
     width:30px;
@@ -207,13 +195,11 @@ body{
 
 }
 
-
 /*=================================
           TABLETTE
 =================================*/
 
 @media(max-width:1000px){
-
 
 .header{
 
@@ -223,13 +209,11 @@ body{
 
 }
 
-
 .bloc-identite{
 
     gap:10px;
 
 }
-
 
 .logo img{
 
@@ -239,13 +223,11 @@ body{
 
 }
 
-
 .titre h1{
 
     font-size:26px;
 
 }
-
 
 .slogan{
 
@@ -253,13 +235,11 @@ body{
 
 }
 
-
 .navigation ul{
 
     gap:15px;
 
 }
-
 
 .navigation a{
 
@@ -267,17 +247,13 @@ body{
 
 }
 
-
 }
-
-
 
 /*=================================
           MOBILE
 =================================*/
 
 @media(max-width:768px){
-
 
 .header{
 
@@ -299,20 +275,17 @@ body{
 
 }
 
-
 .titre h1{
 
     font-size:22px;
 
 }
 
-
 .slogan{
 
     font-size:12px;
 
 }
-
 
 /* afficher hamburger */
 
@@ -321,7 +294,6 @@ body{
     display:flex;
 
 }
-
 
 /* cacher menu */
 
@@ -341,7 +313,6 @@ body{
 
 }
 
-
 .navigation ul{
 
     flex-direction:column;
@@ -352,7 +323,6 @@ body{
 
 }
 
-
 .navigation li{
 
     width:100%;
@@ -360,7 +330,6 @@ body{
     text-align:center;
 
 }
-
 
 .navigation a{
 
@@ -370,7 +339,6 @@ body{
 
 }
 
-
 /* ouverture menu */
 
 #menu:checked ~ .navigation{
@@ -378,7 +346,6 @@ body{
     display:block;
 
 }
-
 
 }
 main{
@@ -390,7 +357,6 @@ main{
     padding:80px 0;
 
 }
-
 
 /*==================================================
             HERO
@@ -534,7 +500,6 @@ main{
 
 }
 
-
 /*==================================================
             SECTION RUBRIQUES
 ==================================================*/
@@ -571,7 +536,6 @@ main{
 
 }
 
-
 /*==================================================
             GRILLE DES CARTES
 ==================================================*/
@@ -587,7 +551,6 @@ main{
     margin-bottom:90px;
 
 }
-
 
 /*==================================================
                 CARTE
@@ -619,7 +582,6 @@ main{
 
 }
 
-
 /*==================================================
             ENTETE DE CARTE
 ==================================================*/
@@ -643,7 +605,6 @@ main{
     color:white;
 
 }
-
 
 /*==================================================
                 ICONE
@@ -683,7 +644,6 @@ main{
 
 }
 
-
 /*==================================================
                 CONTENU
 ==================================================*/
@@ -718,7 +678,6 @@ main{
 
 }
 
-
 /*==================================================
             TITRES GENERAUX
 ==================================================*/
@@ -735,11 +694,9 @@ p{
 
 }
 
-
 /*==================================================
             LIGNES HR
 ==================================================*/
-
 
 /*==================================================
                     FOOTER
@@ -902,5 +859,945 @@ p{
 
     .footer-social {
         justify-content: center;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+
+    .footer-nav a:hover {
+        padding-left: 0;
+    }
+
+    .footer-colonne h3 {
+        font-size: 17px;
+    }
+}
+
+/*==================================================
+            ORDINATEURS PORTABLES
+==================================================*/
+
+@media(max-width:1200px){
+
+.hero{
+
+    gap:40px;
+
+}
+
+.hero h2{
+
+    font-size:3.3rem;
+
+}
+
+.hero-image img{
+
+    max-width:430px;
+
+}
+
+.rubriques{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/*==================================================
+                TABLETTES
+==================================================*/
+
+@media(max-width:992px){
+
+header{
+
+    flex-wrap:wrap;
+
+    padding:18px 5%;
+
+}
+
+.branding{
+
+    margin-left:15px;
+
+}
+
+.branding h1{
+
+    font-size:1.8rem;
+
+}
+
+.branding p{
+
+    font-size:.95rem;
+
+}
+
+.menu{
+
+    gap:18px;
+
+}
+
+.menu a{
+
+    font-size:.95rem;
+
+    padding:8px;
+
+}
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    min-height:auto;
+
+}
+
+.hero-texte{
+
+    order:2;
+
+}
+
+.hero-image{
+
+    order:1;
+
+}
+
+.hero-image img{
+
+    max-width:420px;
+
+}
+
+.hero p{
+
+    max-width:100%;
+
+}
+
+.hero-boutons{
+
+    justify-content:center;
+
+}
+
+.titre-rubriques h2{
+
+    font-size:2.3rem;
+
+}
+
+
+}
+
+
+/*==================================================
+                SMARTPHONES
+==================================================*/
+
+@media(max-width:768px){
+
+header{
+
+    position:relative;
+
+}
+
+/* bouton hamburger */
+
+.hamburger{
+
+    display:flex;
+
+    margin-left:auto;
+
+}
+
+/* cacher menu */
+
+nav{
+
+    width:100%;
+
+}
+
+.menu{
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:#081B33;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    display:none;
+
+    padding:20px 0;
+
+    gap:8px;
+
+}
+
+.menu li{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.menu a{
+
+    width:100%;
+
+    justify-content:center;
+
+    padding:15px;
+
+}
+
+#menu-toggle:checked ~ nav .menu{
+
+    display:flex;
+
+}
+
+.branding{
+
+    flex:0;
+
+}
+
+.branding h1{
+
+    font-size:1.5rem;
+
+}
+
+.branding p{
+
+    font-size:.85rem;
+
+}
+
+.logo img{
+
+    width:70px;
+
+}
+
+.hero{
+
+    padding-top:40px;
+
+}
+
+.hero h2{
+
+    font-size:2.4rem;
+
+}
+
+.hero p{
+
+    font-size:1rem;
+
+}
+
+.hero-boutons{
+
+    flex-direction:column;
+
+    width:100%;
+
+}
+
+.bouton{
+
+    width:100%;
+
+}
+
+.hero-image img{
+
+    max-width:320px;
+
+}
+
+.rubriques{
+
+    grid-template-columns:1fr;
+
+}
+
+.titre-rubriques{
+
+    margin-top:70px;
+
+}
+
+.titre-rubriques h2{
+
+    font-size:2rem;
+
+}
+
+}
+
+.footer-colonne{
+
+    width:100%;
+
+}
+
+.footer-colonne a:hover{
+
+    transform:none;
+
+}
+
+/*==================================================
+            PETITS SMARTPHONES
+==================================================*/
+
+@media(max-width:480px){
+
+.logo img{
+
+    width:60px;
+
+}
+
+.branding h1{
+
+    font-size:1.3rem;
+
+}
+
+.branding p{
+
+    display:none;
+
+}
+
+.hero h2{
+
+    font-size:2rem;
+
+}
+
+.hero p{
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+.hero-image img{
+
+    max-width:250px;
+
+}
+
+.titre-rubriques h2{
+
+    font-size:1.7rem;
+
+}
+
+.carte{
+
+    padding:22px;
+
+}
+
+.entete-carte{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.entete-carte h3{
+
+    font-size:1.4rem;
+
+}
+
+.icone{
+
+    width:65px;
+
+    height:65px;
+
+    font-size:26px;
+
+}
+
+}
+/*=================================
+        SECTION POURQUOI CYBERSHIELD
+=================================*/
+
+.pourquoi{
+
+    margin:100px 0;
+
+}
+
+.titre-pourquoi{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.titre-pourquoi h3{
+
+    color:#1e88ff;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+.titre-pourquoi h2{
+
+    color:white;
+
+    font-size:40px;
+
+    max-width:800px;
+
+    margin:auto;
+
+    line-height:1.3;
+
+}
+
+/* Cartes */
+
+.cartes-pourquoi{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+/* Carte */
+
+.carte-pourquoi{
+
+    background:#101a2d;
+
+    border:1px solid rgba(0,191,255,.25);
+
+    border-radius:20px;
+
+    padding:35px 30px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.carte-pourquoi:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#00bfff;
+
+    box-shadow:0 15px 30px rgba(0,191,255,.25);
+
+}
+
+/* Icône */
+
+.icone-pourquoi{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(30,136,255,.15);
+
+    color:#00bfff;
+
+    font-size:35px;
+
+}
+
+.carte-pourquoi h3{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.carte-pourquoi p{
+
+    color:#d7d7d7;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+/*=================================
+            TABLETTE
+=================================*/
+
+@media(max-width:900px){
+
+.cartes-pourquoi{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.titre-pourquoi h2{
+
+    font-size:32px;
+
+}
+
+}
+
+/*=================================
+            MOBILE
+=================================*/
+
+@media(max-width:600px){
+
+.cartes-pourquoi{
+
+    grid-template-columns:1fr;
+
+}
+
+.titre-pourquoi h2{
+
+    font-size:26px;
+
+}
+
+.carte-pourquoi{
+
+    padding:30px 20px;
+
+}
+
+}
+
+/*==================================================
+          RESPONSIVE FINAL CYBERSHIELD
+          Version nettoyée et unifiée
+==================================================*/
+
+/* Tablettes et écrans moyens */
+@media (max-width: 1000px){
+
+    .header{
+        padding:15px 30px;
+    }
+
+    .bloc-identite{
+        gap:10px;
+        min-width:0;
+    }
+
+    .logo img{
+        width:75px;
+        height:75px;
+    }
+
+    .titre{
+        min-width:0;
+    }
+
+    .titre h1{
+        font-size:26px;
+    }
+
+    .slogan{
+        font-size:14px;
+    }
+
+    .navigation ul{
+        gap:15px;
+    }
+
+    .navigation a{
+        font-size:15px;
+    }
+
+    .hero{
+        gap:40px;
+    }
+
+    .hero h2{
+        font-size:3.3rem;
+    }
+
+    .hero-image img{
+        max-width:430px;
+    }
+
+    .rubriques{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .cartes-pourquoi{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .titre-pourquoi h2{
+        font-size:32px;
+    }
+}
+
+
+/* Smartphones */
+@media (max-width: 768px){
+
+    html{
+        overflow-x:hidden;
+    }
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .header{
+        position:relative;
+        min-height:89px;
+        height:auto;
+        padding:10px 18px;
+        gap:12px;
+    }
+
+    .bloc-identite{
+        flex:1;
+        min-width:0;
+        gap:10px;
+    }
+
+    .logo img{
+        width:62px;
+        height:62px;
+    }
+
+    .titre{
+        min-width:0;
+    }
+
+    .titre h1{
+        font-size:21px;
+        white-space:nowrap;
+    }
+
+    .slogan{
+        font-size:11px;
+        white-space:normal;
+    }
+
+    /* Hamburger */
+    .menu-btn{
+        display:flex;
+        flex-shrink:0;
+        width:32px;
+    }
+
+    /* Navigation mobile */
+    .navigation{
+        position:absolute;
+        z-index:1000;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#000;
+        border-top:1px solid rgba(0,191,255,.18);
+        box-shadow:0 12px 25px rgba(0,0,0,.35);
+        display:none;
+    }
+
+    .navigation ul{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        padding:8px 0;
+    }
+
+    .navigation li{
+        width:100%;
+        text-align:center;
+    }
+
+    .navigation a{
+        display:block;
+        width:100%;
+        padding:14px 20px;
+        font-size:16px;
+    }
+
+    #menu:checked ~ .navigation{
+        display:block;
+    }
+
+    main{
+        width:calc(100% - 32px);
+        padding:45px 0;
+    }
+
+    /* Hero */
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        min-height:auto;
+        gap:35px;
+    }
+
+    .hero-texte{
+        width:100%;
+        order:2;
+    }
+
+    .hero-image{
+        width:100%;
+        order:1;
+    }
+
+    .hero-image img{
+        width:100%;
+        max-width:320px;
+        height:auto;
+    }
+
+    .hero h2{
+        font-size:2.4rem;
+        line-height:1.2;
+    }
+
+    .hero p{
+        max-width:100%;
+        font-size:1rem;
+        line-height:1.7;
+    }
+
+    .hero-boutons{
+        justify-content:center;
+        flex-direction:column;
+        width:100%;
+        gap:12px;
+    }
+
+    .bouton{
+        width:100%;
+        min-height:52px;
+    }
+
+    /* Rubriques */
+    .titre-rubriques{
+        margin-top:65px;
+        margin-bottom:35px;
+    }
+
+    .titre-rubriques h3{
+        font-size:1.1rem;
+    }
+
+    .titre-rubriques h2{
+        font-size:2rem;
+    }
+
+    .rubriques{
+        grid-template-columns:1fr;
+        gap:20px;
+        margin-bottom:60px;
+    }
+
+    .carte{
+        padding:24px 20px;
+    }
+
+    /* Pourquoi CyberShield */
+    .pourquoi{
+        margin:70px 0;
+    }
+
+    .titre-pourquoi{
+        margin-bottom:35px;
+    }
+
+    .titre-pourquoi h3{
+        font-size:16px;
+    }
+
+    .titre-pourquoi h2{
+        font-size:26px;
+    }
+
+    .cartes-pourquoi{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .carte-pourquoi{
+        padding:30px 20px;
+    }
+
+    /* Footer */
+    .footer-top{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:35px;
+        padding:40px 20px 30px;
+    }
+
+    .footer-colonne{
+        align-items:center;
+        width:100%;
+    }
+
+    .footer-social{
+        justify-content:center;
+    }
+
+    .footer-contact p{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .footer-nav a:hover{
+        padding-left:0;
+    }
+
+    .footer-colonne h3{
+        font-size:17px;
+    }
+}
+
+
+/* Très petits smartphones */
+@media (max-width: 480px){
+
+    .header{
+        padding:9px 14px;
+    }
+
+    .logo img{
+        width:56px;
+        height:56px;
+    }
+
+    .titre h1{
+        font-size:18px;
+    }
+
+    .slogan{
+        font-size:10px;
+    }
+
+    .menu-btn span{
+        width:27px;
+        height:3px;
+    }
+
+    main{
+        width:calc(100% - 24px);
+        padding:35px 0;
+    }
+
+    .hero{
+        gap:25px;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+    .hero-image img{
+        max-width:250px;
+    }
+
+    .titre-rubriques{
+        margin-top:55px;
+    }
+
+    .titre-rubriques h2{
+        font-size:1.7rem;
+    }
+
+    .entete-carte{
+        flex-direction:column;
+        text-align:center;
+        gap:14px;
+    }
+
+    .entete-carte h3{
+        font-size:1.4rem;
+    }
+
+    .icone{
+        width:65px;
+        height:65px;
+        font-size:26px;
+    }
+
+    .carte-pourquoi{
+        padding:25px 18px;
+    }
+
+    .footer-top{
+        padding:35px 16px 25px;
     }
 }
